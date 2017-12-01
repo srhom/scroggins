@@ -1,0 +1,34 @@
+.recipe-header {
+	h2 {
+        text-indent: -9999px;
+        color: transparent;
+        margin: 0 auto;
+        height: 178px;
+        width: 316px;
+        background-image: url(../../images/big_eats_recipe.png);
+        background-repeat: no-repeat;
+        @include break(mobile) {
+            height: 300px;
+        }
+        @include break(v-mobile) {
+            height: 200px;
+        }
+        &:after {
+	        content: '';
+	        width: 0!important;
+	        }
+        @include break(mobile) {
+            width: 100%;
+            background-size: 100%;
+        }
+    }
+}
+
+.inner-wrapper {
+	img {
+		margin: 1em 0;
+		width: 50%;
+		display: block;
+		@include break(mobile) {width:100%;}
+	}
+}

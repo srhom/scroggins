@@ -1,0 +1,35 @@
+.home {
+    article {
+        text-align: center;
+        padding: 3em 3em;
+        h2 {
+            &:after {
+                content: '';
+                width: 60px;
+                height: 4px;
+                background: #be1742;
+                position: relative;
+                bottom: -30px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        p {
+            margin: 3em;
+            @include break(mobile) {
+                margin: 3em 0;
+            }
+        }
+        a {
+            padding: 1em;
+        }
+    }
+}
+
+.fa-angle-down {font-size: 2em;}
+
+.arrow {
+	margin-top: 0;
+	@include break(mobile) {margin-top: -130px;}
+	@include break(v-mobile) {margin-top: 65px;}
+}

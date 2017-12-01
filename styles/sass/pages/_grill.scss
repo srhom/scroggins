@@ -1,0 +1,216 @@
+body.grill-page {
+    #big-eats {
+        //padding: 4em 3em 1.75em 3em;
+        h2 {
+            margin-bottom: 1em;
+        }
+    }
+    #grill-tips {
+        padding: 4em 0 10em 0;
+        h3 {
+            color: lighten($grey, 10%);
+            font-size: 2.5rem;
+            cursor: pointer;
+            outline: none;
+            line-height: 8rem;
+            border-bottom: 1px solid grey;
+            margin-bottom: 0;
+            @include break(mobile) {
+                font-size: 2rem;
+                line-height: 3rem;
+                padding: 3rem 0;
+            }
+            &:before {
+                content: '\f055';
+                font-family: 'FontAwesome';
+                margin-right: .5em;
+            }
+        }
+        p {
+            color: $grey;
+            margin-bottom: 0;
+        }
+        #accordion {
+            div {
+                margin-bottom: 2em;
+                //border-bottom: 1px solid grey;
+                //padding-bottom: 2em;
+            }
+        }
+    }
+}
+
+#big-eats {
+    background: $light-grey;
+    text-align: center;
+    padding: 7em 3em;
+    @include break(mobile) {
+        padding: 7em 1em;
+    }
+    h2 {
+        text-indent: -99999px;
+        color: transparent;
+        margin: 0 auto;
+        height: 178px;
+        width: 316px;
+        background-image: url(../../images/big_eats_recipe.png);
+        background-repeat: no-repeat;
+        @include break(mobile) {
+            height: 300px;
+        }
+        @include break(v-mobile) {
+            height: 200px;
+        }
+        &:before {
+            content: '';
+            width: 150px;
+            height: 1px;
+            background: #d8d8d8;
+            position: relative;
+            display: block;
+            left: -165px;
+            top: 70px;
+            @include break(v-tablet) {
+                display: none;
+            }
+        }
+        &:after {
+            content: '';
+            width: 150px;
+            height: 1px;
+            background: #d8d8d8;
+            position: relative;
+            display: block;
+            right: -340px;
+            top: 20px;
+            @include break(v-tablet) {
+                display: none;
+            }
+        }
+        @include break(mobile) {
+            width: 100%;
+            background-size: 100%;
+        }
+    }
+    ul > li {
+        display: inline-block;
+        height: 245px;
+        width: 245px;
+        margin: 2em 1em 3em 1em;
+        @include break(mobile) {
+            margin: 2em 1em 3em 1em;
+        }
+        a:after {
+            position: absolute;
+            font-family: 'FontAwesome';
+            top: -34px;
+            left: 112px;
+            font-size: 1.25em;
+        }
+        &#recipe001 {
+            background-image: url(../../images/be-recipe001.jpg);
+            background-repeat: no-repeat;
+            a:after {
+                content: '\F0F5';
+            }
+        }
+        &#recipe002 {
+            background-image: url(../../images/be-recipe002.jpg);
+            background-repeat: no-repeat;
+            a:after {
+                content: '\F0F5';
+            }
+        }
+        &#recipe003 {
+            background-image: url(../../images/be-recipe003.jpg);
+            background-repeat: no-repeat;
+            a:after {
+                content: '\F0F5';
+            }
+        }
+        &#recipe004 {
+            background-image: url(../../images/be-recipe004.jpg);
+            background-repeat: no-repeat;
+            a:after {
+                content: '\F0F5';
+            }
+        }
+		&#recipe005 {
+            background-image: url(../../images/recipes/grilled-spaghetti/thumb-spaghetti.png);
+            background-repeat: no-repeat;
+            a:after {
+                content: '\F0F5';
+            }
+        }
+        &#recipe006 {
+            background-image: url(../../images/recipes/ribeye/steak_thumb.jpg);
+            background-repeat: no-repeat;
+            a:after {
+                content: '\F0F5';
+            }
+        }
+        &#recipe007 {
+            background-image: url(../../images/recipes/swai-fish/swai-fish.jpg);
+            background-repeat: no-repeat;
+            a:after {
+                content: '\F0F5';
+            }
+        }
+        &#recipe008 {
+            background-image: url(../../images/recipes/mushrooms/mushrooms_thumbs.jpg);
+            background-repeat: no-repeat;
+            a:after {
+                content: '\F0F5';
+            }
+        }
+		&#recipe009 {
+            background-image: url(../../images/recipes/tenderloin/tenderloin.jpg);
+            background-repeat: no-repeat;
+            a:after {
+                content: '\F0F5';
+            }
+        }
+        a {
+            height: 245px;
+            width: 245px;
+            display: block;
+            color: white;
+            font-family: $f-primary;
+            font-weight: 400;
+            text-decoration: none;
+            font-size: 1.5em;
+            vertical-align: middle;
+            line-height: 245px;
+            @include opacity (0);
+            @include transitions();
+            &:hover {
+                @include opacity (1);
+                background-color: rgba(188, 27, 68, 0.8);
+            }
+        }
+    }
+    .from-the-grill {
+        a {
+            background: $red;
+            padding: 10px 16px;
+            color: white;
+            font-family: $f-primary;
+            text-decoration: none;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            @include transitions();
+            &:hover {
+                background-color: darken($red, 10%);
+            }
+        }
+    }
+}
+
+.grill {
+    header {
+        img {
+            width: 100%;
+        }
+    }
+}

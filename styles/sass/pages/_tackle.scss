@@ -1,0 +1,129 @@
+body.tackle-page {
+    #tackle-wrapper {
+        padding: 4em 12em;
+        @include break (tablet) {padding: 6em 1em;};
+        @include break (v-tablet) {padding: 3em 1em;};
+    }
+    .tackle {
+        position: relative;
+        text-align: center;
+    }
+    a.hoverLink {
+        position: absolute;
+        background: transparent url(../images/btn-hover-red.png) no-repeat top left;
+        width: 20px;
+        height: 20px;
+        text-indent: -9000px;
+        display: block;
+        z-index: 10;
+        @include transitions(none, ease-in-out, 0, 0);
+        &:hover {
+            background: transparent url(../images/btn-hover-red.png) no-repeat bottom left;
+        }
+    }
+    #lureInfo {
+        position: absolute;
+        background: #eee;
+        padding: 10px 20px;
+        z-index: 20;
+        font-size: 11px;
+        width: 300px;
+        text-align: left;
+        h4 {
+            font-family: $f-primary;
+            font-size: 1.5em;
+            font-weight: 500;
+            letter-spacing: .025em;
+        }
+        p {
+            font-family: $f-secondary;
+            font-size: 1.25em;
+        }
+    }
+    #sponsorFeat #lureInfo {
+        width: auto;
+    }
+    #sponsorFeat {
+        position: relative;
+    }
+    .tackle002 {
+	    overflow: auto;
+		&:after {
+			content: '';
+			clear: both;
+			}
+	    li {
+		    display: block;
+			width: 100%;
+		    height: 165px;
+		    background-color: $grey;
+		    @include col(1,2,0);
+		    
+		    @include break (v-tablet) {
+			    width:100%;
+			    };
+		    &#lure001 {
+			    background: url(../../images/lures/scroggins_lures_0008.png);
+			    background-repeat: no-repeat;
+			     background-position: center; background-size: contain;
+			    }
+				&#lure002 {
+			    background: url(../../images/lures/scroggins_lures_0003.png);
+			    background-repeat: no-repeat;
+			     background-position: center; background-size: contain;
+			    }
+			    &#lure003 {
+			    background: url(../../images/lures/scroggins_lures_0007.png);
+			    background-repeat: no-repeat;
+			     background-position: center; background-size: contain;
+			    }		    		    
+			    &#lure004 {
+			    background: url(../../images/lures/scroggins_lures_0006.png);
+			    background-repeat: no-repeat;
+			     background-position: center; background-size: contain;
+			    }
+				&#lure005 {
+			    background: url(../../images/lures/scroggins_lures_0002.png);
+			    background-repeat: no-repeat;
+			     background-position: center; background-size: contain;
+			    }
+				&#lure006 {
+			    background: url(../../images/lures/scroggins_lures_0005.png);
+			    background-repeat: no-repeat;
+			     background-position: center; background-size: contain;
+			    }
+				&#lure007 {
+			    background: url(../../images/lures/scroggins_lures_0001.png);
+			    background-repeat: no-repeat;
+			     background-position: center; background-size: contain;
+			    }
+				&#lure008 {
+			    background: url(../../images/lures/scroggins_lures_0004.png);
+			    background-repeat: no-repeat;
+			     background-position: center; background-size: contain;
+			    }
+				&#lure009 {
+			    background: url(../../images/lures/scroggins_lures_0000.png);
+			    background-repeat: no-repeat;
+			     background-position: center; background-size: contain;
+			   }
+		    }
+	    a{	
+			width: 100%;
+		    height: 135px;
+		    padding-top: 30px;
+		    display: block;
+		    font-size: .85em;
+		    font-weight: 600;
+		    color: transparent;
+			@include break (v-tablet) {
+			    width:100%;
+			    };
+		    &:hover {
+			    background-color: rgba(255, 255, 255, 0.8);
+			    color: $black;
+			}
+		    	
+	    }
+    }
+}

@@ -1,0 +1,223 @@
+body.sponsors-page {
+    .sponsors-grid {
+        text-align: center;
+        margin: 3em 6em;
+        @include break (mobile) {margin: 3em 1em;};
+        ul > li {
+            display: inline-block;
+            height: 245px;
+            width: 245px;
+            margin: -1px;
+            padding: 5px;
+            border-bottom: 1px solid $middle-grey;
+            border-right: 1px solid $middle-grey;
+            background-size: 90%;
+            &:nth-child(4n) {
+                border-right: 0px
+            }
+            ;
+            &:nth-last-child(-n+4) {
+                border-bottom: 0px
+            }
+            ;
+            @include break (tablet) {
+                border-bottom: 1px solid $middle-grey;
+                border-right: 1px solid $middle-grey;
+                &:nth-child(4n) {
+                    border-right: 1px solid $middle-grey
+                }
+                ;
+                &:nth-last-child(-n+4) {
+                    border-bottom: 1px solid $middle-grey
+                }
+                ;
+                &:nth-child(3n) {
+                    border-right: 0px
+                }
+                ;
+                &:nth-last-child(-n+3) {
+                    border-bottom: 0px
+                }
+                ;
+            }
+            @include break (v-tablet) {
+                border-bottom: 1px solid $middle-grey;
+                border-right: 1px solid $middle-grey;
+                &:nth-child(3n) {
+                    border-right: 1px solid $middle-grey
+                }
+                ;
+                &:nth-last-child(-n+3) {
+                    border-bottom: 1px solid $middle-grey
+                }
+                ;
+                &:nth-child(2n) {
+                    border-right: 0
+                }
+                ;
+                &:nth-last-child(-n+2) {
+                    border-bottom: 0
+                }
+                ;
+            }
+            @include break(mobile) {
+                margin: 2em 1em 3em 1em;
+                border: 1px solid $middle-grey!important;
+            }
+            a:after {
+                position: absolute;
+                font-family: 'FontAwesome';
+                top: -34px;
+                left: 112px;
+                font-size: 1.25em;
+            }
+            &#toyota {
+                background-image: url(../../images/sponsors/logos/scroggins_logos_0003.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                a:after {
+                    content: '\f0c1';
+                }
+            }
+            &#yamaha {
+                background-image: url(../../images/sponsors/logos/scroggins_logos_0002.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                a:after {
+                    content: '\f0c1';
+                }
+            }
+            &#triton {
+                background-image: url(../../images/sponsors/logos/scroggins_logos_0001.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                a:after {
+                    content: '\f0c1';
+                }
+            }
+            &#yum {
+                background-image: url(../../images/sponsors/logos/scroggins_logos_0000.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                a:after {
+                    content: '\f0c1';
+                }
+            }
+            &#hi-seas {
+                background-image: url(../../images/sponsors/logos/scroggins_logos_0006.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                a:after {
+                    content: '\f0c1';
+                }
+            }
+            &#booyah {
+                background-image: url(../../images/sponsors/logos/scroggins_logos_0007.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                a:after {
+                    content: '\f0c1';
+                }
+            }
+            &#whiteice {
+                background-image: url(../../images/sponsors/logos/scroggins_logos_0008.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                a:after {
+                    content: '\f0c1';
+                }
+            }
+            &#duckett {
+                background-image: url(../../images/sponsors/logos/scroggins_logos_0009.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                a:after {
+                    content: '\f0c1';
+                }
+            }
+            &#hummingbird {
+                background-image: url(../../images/sponsors/logos/scroggins_logos_0010.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                a:after {
+                    content: '\f0c1';
+                }
+            }
+            &#marine {
+                background-image: url(../../images/sponsors/logos/scroggins_logos_0011.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                a:after {
+                    content: '\f0c1';
+                }
+            }
+            &#lews {
+                background-image: url(../../images/sponsors/logos/scroggins_logos_0012.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                a:after {
+                    content: '\f0c1';
+                }
+            }
+            &#minn-kota {
+                background-image: url(../../images/sponsors/logos/scroggins_logos_0013.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                a:after {
+                    content: '\f0c1';
+                }
+            }
+            &#bass {
+                background-image: url(../../images/sponsors/logos/scroggins_logos_0014.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                a:after {
+                    content: '\f0c1';
+                }
+            }
+            &#bassmaster-elite {
+                background-image: url(../../images/sponsors/logos/scroggins_logos_0015.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                a:after {
+                    content: '\f0c1';
+                }
+            }
+			&#toyota-bonus {
+                background-image: url(../../images/sponsors/logos/scroggins_logos_0017.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                a:after {
+                    content: '\f0c1';
+                }
+            }
+			&#dynamic {
+                background-image: url(../../images/sponsors/logos/scroggins_logos_0018.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                a:after {
+                    content: '\f0c1';
+                }
+            }
+            a {
+                text-align: center;
+                height: 245px;
+                width: 245px;
+                display: block;
+                color: $black;
+                font-family: $f-primary;
+                font-weight: 400;
+                text-decoration: none;
+                font-size: 1.5em;
+                vertical-align: middle;
+                line-height: 245px;
+                @include opacity (0);
+                @include transitions();
+                &:hover {
+                    @include opacity (1);
+                    background-color: rgba(234, 234, 234, 0.9)
+                }
+            }
+        }
+    }
+}

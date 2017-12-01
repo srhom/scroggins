@@ -1,0 +1,58 @@
+#mobile-nav {
+	.logo {
+		display: none;
+		position: absolute;
+		top: 10px;
+		z-index: 3000;
+		margin: 8px 2em 0 2em;
+		@include break (v-tablet) {display: block;}
+		.home {
+			display: inline-block;
+	        height: 41px;
+	        width: 171px;
+	        text-indent: -4000px;
+	        background-image: url(../images/logo_scroggins.png);
+	        background-repeat: no-repeat;
+		}
+	}
+}
+
+#dl-menu {
+	display: none;
+	position: absolute;
+	top:16px;
+	z-index: 2000;
+	//right: -5em;
+	text-align: right;
+		@include break(v-tablet) {
+		    display: block;
+		}
+		@include break(mobile) {
+		    display: block;
+		    margin-top: 0;
+		}
+	.dl-trigger {right: 20px;}
+	.dl-menuopen {text-align: left;}
+	.dl-subviewopen {margin-bottom: 0;}
+	.dl-submenu {
+		margin: 0;
+		li {margin-bottom: 0;}
+	}
+}
+
+
+
+.dl-menuwrapper button,
+.dl-menuwrapper button:hover, 
+.dl-menuwrapper button.dl-active, 
+.dl-menuwrapper ul {
+	background: $trans-red;
+}
+
+.dl-menu {
+	a {
+		font-family: $f-primary;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+}
